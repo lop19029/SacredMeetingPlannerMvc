@@ -8,7 +8,7 @@ namespace SacredMeetingPlannerMvc.Models
         public int ID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
-        public string IsLeader { get; set; }
+        public bool IsLeader { get; set; }
         public string Subject { get; set; }
     }
 }
