@@ -10,7 +10,7 @@ namespace SacredMeetingPlannerMvc.Models
         public Person Leader { get; set; }
         public int OpeningSong { get; set; }
         public int SacramentSong { get; set; }
-        public int IntermediateSong { get; set; } //optional
+        public string IntermediateSong { get; set; } //set to string to allow for a nullable property. Ints cannot be null -Harrison
         public int ClosingSong { get; set; }
         public List<Person> Speakers { get; set; }
 
