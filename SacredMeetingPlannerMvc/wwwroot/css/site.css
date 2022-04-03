@@ -7,6 +7,20 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.table thead {
+    background-color: #3366FF;
+    color: white;
+}
+
+.table td{
+    border: solid 1px grey
+}
+
+.nav {
+    background-color: black;
+    color: white;
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;

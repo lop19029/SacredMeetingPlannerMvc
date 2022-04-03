@@ -25,7 +25,7 @@ namespace SacredMeetingPlannerMvc.Data
                 new Person{ID=2, LastName="Cruise", FirstName="Tom", IsLeader=false, Subject="Revelation"},
                 new Person{ID=3, LastName="Hanks", FirstName="Tom", IsLeader=true, Subject="Book of Mormon"},
                 new Person{ID=4, LastName="Trejo", FirstName="Danny", IsLeader=false, Subject="Repentance"},
-                new Person{ID=5, LastName="Rock", FirstName="Chris", IsLeader=true, Subject="Stand in holy places"},
+                new Person{ID=5, LastName="Rock", FirstName="Chris", IsLeader=true, Subject="Stand in holy places"}
             };
 
             foreach (Person p in persons)

@@ -20,8 +20,16 @@ namespace SacredMeetingPlannerMvc.Controllers
         }
 
         // GET: People
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+
+            ViewData["CurrentFilter"] = searchString;
+            var people = from p in _context.Person
+                         select p;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                people = people.Where(p => p.LastName.Contains(searchString) || p.FirstName.Contains(searchString));
+            }
             return View(await _context.Person.ToListAsync());
         }
 
