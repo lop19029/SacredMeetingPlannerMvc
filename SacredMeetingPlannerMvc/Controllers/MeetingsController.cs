@@ -54,7 +54,7 @@ namespace SacredMeetingPlannerMvc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Date,OpeningSong,SacramentSong,IntermediateSong,ClosingSong")] Meeting meeting)
+        public async Task<IActionResult> Create([Bind("ID,Date,Leader,OpeningSong,SacramentSong,IntermediateSong,ClosingSong")] Meeting meeting)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace SacredMeetingPlannerMvc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Date,OpeningSong,SacramentSong,IntermediateSong,ClosingSong")] Meeting meeting)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Date,Leader,OpeningSong,SacramentSong,IntermediateSong,ClosingSong")] Meeting meeting)
         {
             if (id != meeting.ID)
             {
