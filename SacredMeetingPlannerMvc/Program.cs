@@ -18,6 +18,7 @@ namespace SacredMeetingPlannerMvc
             var host = CreateHostBuilder(args).Build();
 
             CreateDbIfNotExists(host);
+            Console.WriteLine(host);
 
             host.Run();
         }
